@@ -149,6 +149,7 @@ export const BaseNodeForm = <T extends CreateNodeCommand.Request | UpdateNodeCom
                                     label={t('base-node-form.country')}
                                     {...form.getInputProps('countryCode')}
                                     data={COUNTRIES}
+                                    comboboxProps={{ transitionProps: { transition: 'fade', duration: 200 } }}
                                     leftSection={<TbMapPin size={16} />}
                                     placeholder={t('base-node-form.select-country')}
                                     required

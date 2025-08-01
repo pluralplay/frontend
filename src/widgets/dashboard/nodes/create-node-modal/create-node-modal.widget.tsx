@@ -74,7 +74,7 @@ export const CreateNodeModalWidget = () => {
                     <Text fw={500}>{t('create-node-modal.widget.create-node')}</Text>
                 </Group>
             }
-            transitionProps={isMobile ? { transition: 'fade', duration: 200 } : undefined}
+            transitionProps={isMobile ? { transition: 'faslide-down', duration: 200 } : undefined}
         >
             <BaseNodeForm
                 advancedOpened={advancedOpened}

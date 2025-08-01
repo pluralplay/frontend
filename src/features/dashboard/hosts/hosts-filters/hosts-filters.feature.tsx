@@ -103,6 +103,7 @@ export const HostsFiltersFeature = (props: IProps) => {
                     <Select
                         clearable
                         data={configProfileOptions}
+                        comboboxProps={{ transitionProps: { transition: 'fade', duration: 200 } }}
                         leftSection={<PiBookmarks size="16px" />}
                         leftSectionPointerEvents="none"
                         onChange={handleConfigProfileChange}
@@ -115,6 +116,7 @@ export const HostsFiltersFeature = (props: IProps) => {
                     <Select
                         clearable
                         data={inboundOptions}
+                        comboboxProps={{ transitionProps: { transition: 'fade', duration: 200 } }}
                         disabled={!configProfileFilter}
                         leftSection={<PiTag size="16px" />}
                         leftSectionPointerEvents="none"
@@ -130,6 +132,7 @@ export const HostsFiltersFeature = (props: IProps) => {
                     <Select
                         clearable
                         data={searchOptions}
+                        comboboxProps={{ transitionProps: { transition: 'fade', duration: 200 } }}
                         leftSection={<PiMagnifyingGlass size={16} />}
                         onChange={handleSearchSelect}
                         placeholder={t('hosts-filters.feature.search-by-remark')}
@@ -140,6 +143,7 @@ export const HostsFiltersFeature = (props: IProps) => {
                     <Select
                         clearable
                         data={searchAddressData}
+                        comboboxProps={{ transitionProps: { transition: 'fade', duration: 200 } }}
                         leftSection={<PiMagnifyingGlass size={16} />}
                         onChange={handleSearchAddressSelect}
                         placeholder={t('hosts-filters.feature.address')}

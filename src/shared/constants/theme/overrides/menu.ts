@@ -7,8 +7,8 @@ export default {
             withArrow: false,
             radius: 'md',
             transitionProps: {
-                transition: 'pop',
-                duration: 180,
+                transition: 'scale-y',
+                duration: 130,
                 timingFunction: 'ease-out'
             },
             styles: {

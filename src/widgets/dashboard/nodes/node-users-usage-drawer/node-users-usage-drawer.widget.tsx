@@ -625,6 +625,7 @@ export const NodeUsersUsageDrawer = (props: IProps) => {
                             { label: t('node-users-usage-drawer.widget.180-days'), value: '180' },
                             { label: t('node-users-usage-drawer.widget.365-days'), value: '365' }
                         ]}
+                        comboboxProps={{ transitionProps: { transition: 'fade', duration: 200 } }}
                         defaultValue="7"
                         onChange={(value) =>
                             setPeriod(
@@ -769,6 +770,7 @@ export const NodeUsersUsageDrawer = (props: IProps) => {
                                 label: s.name
                             })) || []
                         }
+                        comboboxProps={{ transitionProps: { transition: 'fade', duration: 200 } }}
                         maw={{ base: '100%', sm: 400 }}
                         onChange={handleMultiSelectChange}
                         placeholder={t('node-users-usage-drawer.widget.filter-users')}

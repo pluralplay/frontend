@@ -339,6 +339,7 @@ export const BaseHostForm = <T extends CreateHostCommand.Request | UpdateHostCom
                                     label: securityLayerLabels[securityLayer] || securityLayer,
                                     value: securityLayer
                                 }))}
+                                comboboxProps={{ transitionProps: { transition: 'fade', duration: 200 } }}
                                 key={form.key('securityLayer')}
                                 label={t('base-host-form.security-layer')}
                                 leftSection={
@@ -431,6 +432,7 @@ export const BaseHostForm = <T extends CreateHostCommand.Request | UpdateHostCom
                                         label: alpn,
                                         value: alpn
                                     }))}
+                                    comboboxProps={{ transitionProps: { transition: 'fade', duration: 200 } }}
                                     key={form.key('alpn')}
                                     label="ALPN"
                                     placeholder={t('base-host-form.alpn-e-g-h2')}
@@ -444,6 +446,7 @@ export const BaseHostForm = <T extends CreateHostCommand.Request | UpdateHostCom
                                         label: fingerprint,
                                         value: fingerprint
                                     }))}
+                                    comboboxProps={{ transitionProps: { transition: 'fade', duration: 200 } }}
                                     key={form.key('fingerprint')}
                                     label={t('base-host-form.fingerprint')}
                                     placeholder={t('base-host-form.fingerprint-e-g-chrome')}
